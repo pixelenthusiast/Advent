@@ -1,6 +1,6 @@
 <?php
     header('Content-Type: text/plain');
-     $Personen = 9;
+     $Personen = 15;
      $Tage = 24;
      $durch = $Tage / $Personen;
      $y=1;
@@ -33,7 +33,7 @@
             }
         shuffle ($rdmgen);
         echo "Vorschlag: ";
-        for($z; $z<$Personen; $z++){
+        for($z; $z<=$rest; $z++){
             echo " Person ".$rdmgen[$z].",";
         }
     }
