@@ -1,6 +1,6 @@
 <?php
     header('Content-Type: text/plain');
-     $Personen = 15;
+     $Personen = 4;
      $Tage = 24;
      $durch = $Tage / $Personen;
      $y=1;
@@ -13,7 +13,7 @@
 
         for($y; $y <= $durch; $y++){
             $tuer = $Personen*($y-1)+$x;
-            echo " ".$tuer;
+            echo " ".str_pad($tuer, 2, '0', STR_PAD_LEFT);
         }
         $y=1;
         echo "\n";
